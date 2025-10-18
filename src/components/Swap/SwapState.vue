@@ -13,5 +13,5 @@ const props = defineProps<{
     state: "on" | "off";
 }>();
 
-const appliedClasses: ComputedRef<string[]> = computed(() => classes.value.swap.part[props.state]);
+const appliedClasses: ComputedRef<string[]> = computed(() => [classes.value.swap.part[props.state]]);
 </script>
