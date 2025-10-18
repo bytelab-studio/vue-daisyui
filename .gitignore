@@ -13,12 +13,11 @@ dist-ssr
 *.local
 cache
 
-./docs/public/*.*
-!./docs/public/.gitkeep
+/docs/public/tailwindcss.bundle.css
 
 # Editor directories and files
 .vscode/*
-!.vscode/extensions.json
+!.vscode/extensions.jsonf
 .idea
 .DS_Store
 *.suo
