@@ -26,7 +26,8 @@ export default defineConfig({
                 items: [
                     {text: "Button", link: "/components/button"},
                     {text: "Dropdown", link: "/components/dropdown"},
-                    {text: "Modal", link: "/components/modal"}
+                    {text: "Modal", link: "/components/modal"},
+                    {text: "Swap", link: "/components/swap"}
                 ]
             }
         ],

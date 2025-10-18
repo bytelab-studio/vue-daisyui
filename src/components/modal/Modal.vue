@@ -1,11 +1,11 @@
 <template>
-    <slot />
+    <slot/>
 </template>
 
 <script setup lang="ts">
 
 import {getCurrentInstance, provide} from "vue";
-import {useModal} from "@logic/hooks/modal.ts";
+import {useModal} from "@logic/hooks/modal";
 
 const instance = getCurrentInstance();
 const modal = useModal();

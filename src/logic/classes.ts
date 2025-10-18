@@ -74,6 +74,21 @@ export interface StyleClasses {
             start: string;
             end: string;
         }
+    },
+    swap: {
+        component: string;
+        part: {
+            on: string;
+            off: string;
+            indeterminate: string;
+        },
+        modifier: {
+            active: string;
+        },
+        style: {
+            rotate: string;
+            flip: string;
+        }
     }
 }
 
@@ -151,6 +166,21 @@ const classes: Ref<StyleClasses> = ref({
             bottom: "modal-bottom",
             start: "modal-start",
             end: "modal-end"
+        }
+    },
+    swap: {
+        component: "swap",
+        part: {
+            on: "swap-on",
+            off: "swap-off",
+            indeterminate: "swap-indeterminate"
+        },
+        modifier: {
+            active: "swap-active"
+        },
+        style: {
+            rotate: "swap-rotate",
+            flip: "swap-flip"
         }
     }
 });

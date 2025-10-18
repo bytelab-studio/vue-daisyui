@@ -1,8 +1,8 @@
 import ModalContent from "@components/modal/ModalContent.vue";
-import {computed, type ComputedRef, type Ref, type ShallowRef} from "vue";
+import {computed, type ComputedRef, type ShallowRef} from "vue";
 
 export interface ModalController {
-    state: Ref<"open" | "closed">;
+    state: ComputedRef<"open" | "closed">;
 
     open(): void;
 
