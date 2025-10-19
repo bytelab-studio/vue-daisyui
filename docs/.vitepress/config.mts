@@ -29,6 +29,12 @@ export default defineConfig({
                     {text: "Modal", link: "/components/modal"},
                     {text: "Swap", link: "/components/swap"}
                 ]
+            },
+            {
+                text: "Data display",
+                items: [
+                    {text: "Accordion", link: "/components/accordion"},
+                ]
             }
         ],
 

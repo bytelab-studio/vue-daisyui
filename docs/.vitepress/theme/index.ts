@@ -7,6 +7,7 @@ import DemoButton from "./components/DemoButton.vue";
 import DemoDropdown from "./components/DemoDropdown.vue";
 import DemoModal from "./components/DemoModal.vue";
 import DemoSwap from "./components/DemoSwap.vue";
+import DemoAccordion from "./components/DemoAccordion.vue";
 
 export default {
     ...DefaultTheme,
@@ -15,6 +16,7 @@ export default {
         app.component("DemoDropdown", DemoDropdown);
         app.component("DemoModal", DemoModal);
         app.component("DemoSwap", DemoSwap);
+        app.component("DemoAccordion", DemoAccordion);
         app.use(daisyui);
         app.use(shadow)
     }

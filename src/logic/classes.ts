@@ -89,6 +89,19 @@ export interface StyleClasses {
             rotate: string;
             flip: string;
         }
+    },
+    collapse: {
+        component: string;
+        part: {
+            title: string;
+            content: string;
+        },
+        modifier: {
+            arrow: string;
+            plus: string;
+            open: string;
+            close: string;
+        }
     }
 }
 
@@ -181,6 +194,19 @@ const classes: Ref<StyleClasses> = ref({
         style: {
             rotate: "swap-rotate",
             flip: "swap-flip"
+        }
+    },
+    collapse: {
+        component: "collapse",
+        part: {
+            title: "collapse-title",
+            content: "collapse-content"
+        },
+        modifier: {
+            arrow: "collapse-arrow",
+            plus: "collapse-plus",
+            open: "collapse-open",
+            close: "collapse-close"
         }
     }
 });

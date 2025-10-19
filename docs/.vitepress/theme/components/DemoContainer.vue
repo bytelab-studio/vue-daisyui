@@ -4,7 +4,7 @@ import {ShadowRoot} from "vue-shadow-dom";
 
 <template>
     <ShadowRoot>
-        <div data-theme="dark" class="p-4 rounded-md flex justify-center">
+        <div data-theme="light" class="p-4 rounded-md flex flex-col items-center justify-center">
             <link rel="stylesheet" href="/tailwindcss.bundle.css"/>
             <slot/>
         </div>
