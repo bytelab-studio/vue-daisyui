@@ -5,9 +5,9 @@
 </template>
 
 <script setup lang="ts">
-import type {Colors, Sizes} from "@logic/consts.ts";
+import type {Colors, Sizes} from "@logic/consts";
 import {computed, type ComputedRef} from "vue";
-import classes from "@logic/classes.ts";
+import classes from "@logic/classes";
 
 const props = defineProps<{
     color: Colors;

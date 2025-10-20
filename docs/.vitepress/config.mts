@@ -34,6 +34,7 @@ export default defineConfig({
                 text: "Data display",
                 items: [
                     {text: "Accordion", link: "/components/accordion"},
+                    {text: "Badge", link: "/components/badge"},
                 ]
             }
         ],
