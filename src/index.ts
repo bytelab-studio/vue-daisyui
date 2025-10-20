@@ -17,6 +17,7 @@ import AccordionHeader from "@components/accordion/AccordionHeader.vue";
 import AccordionContent from "@components/accordion/AccordionContent.vue";
 
 import Badge from "@components/Badge.vue";
+import Checkbox from "@components/Checkbox.vue";
 import Select from "@components/Select.vue";
 
 export {
@@ -38,6 +39,7 @@ export {
     AccordionContent,
 
     Badge,
+    Checkbox,
     Select
 }
 
@@ -65,6 +67,7 @@ export default {
         app.component("AccordionContent", AccordionContent);
     
         app.component("Badge", Badge);
+        app.component("Checkbox", Checkbox);
         app.component("Select", Select);
     }
 }

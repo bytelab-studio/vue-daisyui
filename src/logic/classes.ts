@@ -129,6 +129,29 @@ export interface StyleClasses {
             xl: string;
         }
     },
+    checkbox: {
+        component: string;
+        part: {
+            label: string;
+        },
+        color: {
+            primary: string;
+            secondary: string;
+            accent: string;
+            neutral: string;
+            success: string;
+            warning: string;
+            info: string;
+            error: string;
+        },
+        size: {
+            xs: string;
+            sm: string;
+            md: string;
+            lg: string;
+            xl: string;
+        }
+    },
     select: {
         component: string,
         variant: {
@@ -282,6 +305,29 @@ const classes: Ref<StyleClasses> = ref({
             md: "badge-md",
             lg: "badge-lg",
             xl: "badge-xl"
+        }
+    },
+    checkbox: {
+        component: "checkbox",
+        part: {
+            label: "label"
+        },
+        color: {
+            primary: "checkbox-primary",
+            secondary: "checkbox-secondary",
+            accent: "checkbox-accent",
+            neutral: "checkbox-neutral",
+            success: "checkbox-success",
+            warning: "checkbox-warning",
+            info: "checkbox-info",
+            error: "checkbox-error"
+        },
+        size: {
+            xs: "checkbox-xs",
+            sm: "checkbox-sm",
+            md: "checkbox-md",
+            lg: "checkbox-lg",
+            xl: "checkbox-xl"
         }
     },
     select: {

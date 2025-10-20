@@ -9,6 +9,7 @@ import DemoModal from "./components/DemoModal.vue";
 import DemoSwap from "./components/DemoSwap.vue";
 import DemoAccordion from "./components/DemoAccordion.vue";
 import DemoBadge from "./components/DemoBadge.vue";
+import DemoCheckbox from "./components/DemoCheckbox.vue";
 import DemoSelect from "./components/DemoSelect.vue";
 
 export default {
@@ -20,8 +21,9 @@ export default {
         app.component("DemoSwap", DemoSwap);
         app.component("DemoAccordion", DemoAccordion);
         app.component("DemoBadge", DemoBadge);
+        app.component("DemoCheckbox", DemoCheckbox);
         app.component("DemoSelect", DemoSelect);
         app.use(daisyui);
-        app.use(shadow)
+        app.use(shadow);
     }
-} satisfies Theme
+} satisfies Theme;
