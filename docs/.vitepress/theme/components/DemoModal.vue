@@ -1,6 +1,6 @@
 <template>
     <DemoContainer>
-        <Button color="primary" @click="modal.open()">
+        <Button color="primary" @click="modalController.open()">
             Open Modal
         </Button>
         <Modal>
@@ -8,7 +8,7 @@
                 <h3 class="text-lg font-bold">Hello!</h3>
                 <p>Click outside to close</p>
                 <ModalAction>
-                    <Button color="primary" variant="soft" class="mt-3" @click="modal.close()">Close</Button>
+                    <Button color="primary" variant="soft" class="mt-3" @click="modalController.close()">Close</Button>
                 </ModalAction>
             </ModalContent>
         </Modal>
@@ -19,11 +19,11 @@
 import DemoContainer from "./DemoContainer.vue";
 import Modal from "@components/modal/Modal.vue";
 import ModalContent from "@components/modal/ModalContent.vue";
+import ModalAction from "@components/modal/ModalAction.vue";
 import Button from "@components/Button.vue";
 import {useTemplateRef} from "vue";
 import {ModalController, useModal} from "@logic/controller";
-import ModalAction from "@components/modal/ModalAction.vue";
 
 const modalTemplate = useTemplateRef("modal");
-const modal: ModalController = useModal(modalTemplate);
+const modalController: ModalController = useModal(modalTemplate);
 </script>

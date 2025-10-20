@@ -11,6 +11,11 @@ import ModalTrigger from "@components/modal/ModalTrigger.vue";
 import ModalContent from "@components/modal/ModalContent.vue";
 import ModalAction from "@components/modal/ModalAction.vue";
 
+import Accordion from "@components/accordion/Accordion.vue";
+import AccordionItem from "@components/accordion/AccordionItem.vue";
+import AccordionHeader from "@components/accordion/AccordionHeader.vue";
+import AccordionContent from "@components/accordion/AccordionContent.vue";
+
 export {
     PrimitiveSlot,
     Button,
@@ -22,7 +27,12 @@ export {
     Modal,
     ModalTrigger,
     ModalContent,
-    ModalAction
+    ModalAction,
+
+    Accordion,
+    AccordionItem,
+    AccordionHeader,
+    AccordionContent
 }
 
 export {setClasses, type StyleClasses} from "@logic/classes";
@@ -42,5 +52,10 @@ export default {
         app.component("ModalTrigger", ModalTrigger);
         app.component("ModalContent", ModalContent);
         app.component("ModalAction", ModalAction);
+
+        app.component("Accordion", Accordion);
+        app.component("AccordionItem", AccordionItem);
+        app.component("AccordionHeader", AccordionHeader);
+        app.component("AccordionContent", AccordionContent);
     }
 }
