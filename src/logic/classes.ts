@@ -128,6 +128,29 @@ export interface StyleClasses {
             lg: string;
             xl: string;
         }
+    },
+    select: {
+        component: string,
+        variant: {
+            ghost: string;
+        },
+        color: {
+            neutral: string;
+            primary: string;
+            secondary: string;
+            accent: string;
+            info: string;
+            success: string;
+            warning: string;
+            error: string;
+        },
+        size: {
+            xs: string;
+            sm: string;
+            md: string;
+            lg: string;
+            xl: string;
+        }
     }
 }
 
@@ -259,6 +282,29 @@ const classes: Ref<StyleClasses> = ref({
             md: "badge-md",
             lg: "badge-lg",
             xl: "badge-xl"
+        }
+    },
+    select: {
+        component: "select",
+        variant: {
+            ghost: "select-ghost"
+        },
+        color: {
+            neutral: "select-neutral",
+            primary: "select-primary",
+            secondary: "select-secondary",
+            accent: "select-accent",
+            info: "select-info",
+            success: "select-success",
+            warning: "select-warning",
+            error: "select-error"
+        },
+        size: {
+            xs: "select-xs",
+            sm: "select-sm",
+            md: "select-md",
+            lg: "select-lg",
+            xl: "select-xl"
         }
     }
 });

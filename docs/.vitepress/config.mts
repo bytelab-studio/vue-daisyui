@@ -36,6 +36,12 @@ export default defineConfig({
                     {text: "Accordion", link: "/components/accordion"},
                     {text: "Badge", link: "/components/badge"},
                 ]
+            },
+            {
+                text: "Data input",
+                items: [
+                    {text: "Select", link: "/components/select"}
+                ]
             }
         ],
 

@@ -16,6 +16,9 @@ import AccordionItem from "@components/accordion/AccordionItem.vue";
 import AccordionHeader from "@components/accordion/AccordionHeader.vue";
 import AccordionContent from "@components/accordion/AccordionContent.vue";
 
+import Badge from "@components/Badge.vue";
+import Select from "@components/Select.vue";
+
 export {
     PrimitiveSlot,
     Button,
@@ -32,7 +35,10 @@ export {
     Accordion,
     AccordionItem,
     AccordionHeader,
-    AccordionContent
+    AccordionContent,
+
+    Badge,
+    Select
 }
 
 export {setClasses, type StyleClasses} from "@logic/classes";
@@ -57,5 +63,8 @@ export default {
         app.component("AccordionItem", AccordionItem);
         app.component("AccordionHeader", AccordionHeader);
         app.component("AccordionContent", AccordionContent);
+    
+        app.component("Badge", Badge);
+        app.component("Select", Select);
     }
 }
