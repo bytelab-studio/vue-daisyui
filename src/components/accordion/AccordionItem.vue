@@ -19,7 +19,7 @@ const props = withDefaults(defineProps<{
 });
 
 const accordionName = inject<string>(accordion.name);
-const accordionJoined = inject<boolean>(accordion.joined);
+const accordionJoined = inject<ComputedRef<boolean>>(accordion.joined);
 
 if (!accordionName) {
     throw "Could not find modal context";
@@ -30,7 +30,7 @@ const appliedClasses: ComputedRef<string[]> = computed(() => {
 
     appliedClasses.push(classes.value.collapse.modifier[props.variant]);
 
-    if (accordionJoined) {
+    if (accordionJoined && accordionJoined.value) {
         appliedClasses.push("join-item");
     } else {
         appliedClasses.push("mt-2");

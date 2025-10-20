@@ -222,7 +222,7 @@ const classes: Ref<StyleClasses> = ref({
         },
         placement: {
             start: "dropdown-start",
-            center: "dropdown-start",
+            center: "dropdown-center",
             end: "dropdown-end",
             top: "dropdown-top",
             bottom: "dropdown-bottom",

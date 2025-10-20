@@ -1,18 +1,28 @@
 <template>
     <label :class="classes.checkbox.part.label">
-        <input v-bind="$attrs" type="checkbox" :class="appliedClasses"/>
+        <input 
+            v-bind="$attrs"
+            :checked="props.modelValue"
+            @change="emitValue"
+            type="checkbox"
+            :class="appliedClasses"/>
         <slot />
     </label>
 </template>
 
 <script setup lang="ts">
 import type {Colors, Sizes} from "@logic/consts";
-import {computed, type ComputedRef} from "vue";
+import {computed, type ComputedRef, defineEmits} from "vue";
 import classes from "@logic/classes";
 
 const props = defineProps<{
     color: Colors;
     size?: Sizes;
+    modelValue?: boolean;
+}>();
+
+const emit = defineEmits<{
+    'update:model-value': [boolean];
 }>();
 
 const appliedClasses: ComputedRef<string[]> = computed(() => {
@@ -25,4 +35,8 @@ const appliedClasses: ComputedRef<string[]> = computed(() => {
 
     return appliedClasses;
 });
+
+function emitValue(e: Event) {
+    emit("update:model-value", (e.target as HTMLInputElement).checked);
+}
 </script>

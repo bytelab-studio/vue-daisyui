@@ -21,7 +21,7 @@ const props = withDefaults(defineProps<{
 const name = `accordion-${instance!.uid}`;
 
 provide(accordion.name, name);
-provide(accordion.joined, props.joined);
+provide(accordion.joined, computed<boolean>(() => props.joined));
 
 const opened: ComputedRef<number | null> = computed(() => {
     const accords: NodeListOf<HTMLInputElement> = document.querySelectorAll(`input[type=checkbox][name='${name}']`);

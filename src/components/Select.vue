@@ -1,5 +1,5 @@
 <template>
-    <select :class="appliedClasses">
+    <select :class="appliedClasses" :value="props.modelValue" @change="emitValue">
         <slot />
     </select>
 </template>
@@ -13,6 +13,11 @@ const props = defineProps<{
     color: Colors;
     size?: Sizes;
     variant?: "ghost";
+    modelValue?: string;
+}>();
+
+const emit = defineEmits<{
+    'update:model-value': [string]
 }>();
 
 const appliedClasses: ComputedRef<string[]> = computed(() => {
@@ -28,4 +33,8 @@ const appliedClasses: ComputedRef<string[]> = computed(() => {
     
     return appliedClasses;
 });
+
+function emitValue(e: Event) {
+    emit("update:model-value", (e.target as HTMLSelectElement).value)
+}
 </script>

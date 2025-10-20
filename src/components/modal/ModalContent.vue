@@ -11,9 +11,9 @@
 
 <script setup lang="ts">
 
-import {useModal} from "@logic/hooks/modal.ts";
+import {useModal} from "@logic/hooks/modal";
 import {computed, type ComputedRef, inject, useTemplateRef} from "vue";
-import classes from "@logic/classes.ts";
+import classes from "@logic/classes";
 
 const props = withDefaults(defineProps<{
     dismissable?: boolean

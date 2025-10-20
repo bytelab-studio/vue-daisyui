@@ -13,12 +13,8 @@ import type {Alignments, Orientations} from "@logic/consts";
 const props = withDefaults(defineProps<{
     orientation?: Orientations;
     align?: Alignments;
-    open?: boolean;
-    hover?: boolean;
 }>(), {
     orientation: "bottom",
-    open: false,
-    hover: false
 });
 
 const appliedClasses: ComputedRef<string[]> = computed(() => {
@@ -28,14 +24,6 @@ const appliedClasses: ComputedRef<string[]> = computed(() => {
 
     if (props.align) {
         appliedClasses.push(classes.value.dropdown.placement[props.align]);
-    }
-
-    if (props.open) {
-        appliedClasses.push(classes.value.dropdown.modifier.open);
-    }
-
-    if (props.hover) {
-        appliedClasses.push(classes.value.dropdown.modifier.hover);
     }
 
     return appliedClasses;
