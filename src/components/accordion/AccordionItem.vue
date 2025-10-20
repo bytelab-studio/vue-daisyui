@@ -32,6 +32,8 @@ const appliedClasses: ComputedRef<string[]> = computed(() => {
 
     if (accordionJoined) {
         appliedClasses.push("join-item");
+    } else {
+        appliedClasses.push("mt-2");
     }
 
     return appliedClasses;

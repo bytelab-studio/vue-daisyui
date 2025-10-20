@@ -1,6 +1,6 @@
 <template>
     <DemoContainer>
-        <Accordion joined>
+        <Accordion>
             <AccordionItem>
                 <AccordionHeader>How do I create an account?</AccordionHeader>
                 <AccordionContent>
