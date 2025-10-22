@@ -19,6 +19,7 @@ import AccordionContent from "@components/accordion/AccordionContent.vue";
 import Badge from "@components/Badge.vue";
 import Checkbox from "@components/Checkbox.vue";
 import Select from "@components/Select.vue";
+import Mask from "@components/Mask.vue";
 
 export {
     PrimitiveSlot,
@@ -40,7 +41,8 @@ export {
 
     Badge,
     Checkbox,
-    Select
+    Select,
+    Mask
 }
 
 export {setClasses, type StyleClasses} from "@logic/classes";
@@ -69,5 +71,6 @@ export default {
         app.component("Badge", Badge);
         app.component("Checkbox", Checkbox);
         app.component("Select", Select);
+        app.component("Mask", Mask);
     }
 }

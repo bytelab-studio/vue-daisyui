@@ -43,6 +43,13 @@ export default defineConfig({
                     {text: "Checkbox", link: "/components/checkbox"},
                     {text: "Select", link: "/components/select"}
                 ]
+            },
+            {
+                text: "Layout",
+                items: [
+                    {text: "Mask", link: "/components/mask"},
+                ]
+                
             }
         ],
 

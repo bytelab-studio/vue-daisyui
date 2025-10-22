@@ -103,6 +103,17 @@ export interface StyleClasses {
             close: string;
         }
     },
+    avatar: {
+        component: string;
+        part: {
+            group: string;
+        },
+        modifier: {
+            online: string;
+            offline: string;
+            placeholder: string;
+        }
+    },
     badge: {
         component: string;
         variant: {
@@ -173,6 +184,30 @@ export interface StyleClasses {
             md: string;
             lg: string;
             xl: string;
+        }
+    },
+    mask: {
+        component: string;
+        variant: {
+            squircle: string;
+            heart: string;
+            hexagon: string;
+            hexagon2: string;
+            decagon: string;
+            pentagon: string;
+            diamond: string;
+            square: string;
+            circle: string;
+            star: string;
+            star2: string;
+            triangle: string;
+            triangle2: string;
+            triangle3: string;
+            triangle4: string;
+        },
+        modifier: {
+            half1: string;
+            half2: string
         }
     }
 }
@@ -281,6 +316,17 @@ const classes: Ref<StyleClasses> = ref({
             close: "collapse-close"
         }
     },
+    avatar: {
+        component: "avatar",
+        part: {
+            group: "avatar-group"
+        },
+        modifier: {
+            online: "avatar-online",
+            offline: "avatar-offline",
+            placeholder: "avatar-placeholder"
+        }
+    },
     badge: {
         component: "badge",
         variant: {
@@ -351,6 +397,30 @@ const classes: Ref<StyleClasses> = ref({
             md: "select-md",
             lg: "select-lg",
             xl: "select-xl"
+        }
+    },
+    mask: {
+        component: "mask",
+        variant: {
+            squircle: "mask-squircle",
+            heart: "mask-heart",
+            hexagon: "mask-hexagon",
+            hexagon2: "mask-hexagon-2",
+            decagon: "mask-decagon",
+            pentagon: "mask-pentagon",
+            diamond: "mask-diamond",
+            square: "mask-square",
+            circle: "mask-circle",
+            star: "mask-star",
+            star2: "mask-star-2",
+            triangle: "mask-triangle",
+            triangle2: "mask-triangle-2",
+            triangle3: "mask-triangle-3",
+            triangle4: "mask-triangle-4",
+        },
+        modifier: {
+            half1: "mask-half-1",
+            half2: "mask-half-2"
         }
     }
 });

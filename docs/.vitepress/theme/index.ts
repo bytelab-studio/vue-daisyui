@@ -11,6 +11,7 @@ import DemoAccordion from "./components/DemoAccordion.vue";
 import DemoBadge from "./components/DemoBadge.vue";
 import DemoCheckbox from "./components/DemoCheckbox.vue";
 import DemoSelect from "./components/DemoSelect.vue";
+import DemoMask from "./components/DemoMask.vue";
 
 export default {
     ...DefaultTheme,
@@ -23,6 +24,7 @@ export default {
         app.component("DemoBadge", DemoBadge);
         app.component("DemoCheckbox", DemoCheckbox);
         app.component("DemoSelect", DemoSelect);
+        app.component("DemoMask", DemoMask);
         app.use(daisyui);
         app.use(shadow);
     }
