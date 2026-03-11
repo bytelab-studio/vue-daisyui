@@ -26,5 +26,5 @@ jobs:
       - name: 🛠 Build library
         run: npm run build
 
-#      - name: 📝 Build docs
-#        run: npm run docs:build
+      - name: 📝 Run tests
+        run: npm run test
